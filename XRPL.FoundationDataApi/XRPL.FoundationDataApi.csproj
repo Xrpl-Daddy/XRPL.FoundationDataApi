@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Version>1.0.0.0</Version>
+    <PackageReleaseNotes>XRP Ledger Foundation Data API
+    </PackageReleaseNotes>
+    <SourceRevisionId>
+      ^build_date$([System.DateTime]::UtcNow.ToString("yyyy-MM-ddTHH:mm:ss:fffZ"))
+    </SourceRevisionId>
+    <Description>The purpose of this API specification is to build a replacement for the deprecated Ripple Data API (rippled-historical-database). The API is a middle layer with multiple data providers, so it is more flexibly extendable.</Description>
+    <PackageProjectUrl>https://github.com/Platonenkov/XRPL.FoundationDataApi</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Platonenkov/XRPL.FoundationDataApi</RepositoryUrl>
+    <Copyright>https://github.com/Platonenkov</Copyright>
+    <Authors>Platonenkov</Authors>
+    <Company>https://github.com/Platonenkov</Company>
+    <PackageTags>XRP Ledger Foundation Data API</PackageTags>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <IsPackable>true</IsPackable>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <ExtrasEnableWpfProjectSetup>true</ExtrasEnableWpfProjectSetup>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    <PackageReference Include="System.Net.Http.Json" Version="7.0.0" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <SuppressTfmSupportBuildWarnings>true</SuppressTfmSupportBuildWarnings>
+    <NoWarn>
+      1701;1702;
+      0108;0162;
+      1416;
+      8600;8601;8602;8603;8604;8612;8618;8619;8622;8625;8632;8675;
+      8714;8769;
+      CA1416;
+      NU1701;NU1702;
+      MSB3026;MSB3061;
+    </NoWarn>
+  </PropertyGroup>
+
+</Project>
