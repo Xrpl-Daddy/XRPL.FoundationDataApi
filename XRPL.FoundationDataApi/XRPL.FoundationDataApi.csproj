@@ -14,8 +14,8 @@
       ^build_date$([System.DateTime]::UtcNow.ToString("yyyy-MM-ddTHH:mm:ss:fffZ"))
     </SourceRevisionId>
     <Description>The purpose of this API specification is to build a replacement for the deprecated Ripple Data API (rippled-historical-database). The API is a middle layer with multiple data providers, so it is more flexibly extendable.</Description>
-    <PackageProjectUrl>https://github.com/Platonenkov/XRPL.FoundationDataApi</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/Platonenkov/XRPL.FoundationDataApi</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/Xrpl-Daddy/XRPL.FoundationDataApi</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Xrpl-Daddy/XRPL.FoundationDataApi</RepositoryUrl>
     <Copyright>https://github.com/Platonenkov</Copyright>
     <Authors>Platonenkov</Authors>
     <Company>https://github.com/Platonenkov</Company>
